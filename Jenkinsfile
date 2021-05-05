@@ -14,7 +14,7 @@ pipeline {
         echo 'Bees Buzzing Again'
       }
     }
-    
+
     stage('bum bum') {
       steps {
         echo 'shammi timmi'
@@ -22,5 +22,6 @@ pipeline {
         echo 'Bees Buzzing Again'
       }
     }
+
   }
 }

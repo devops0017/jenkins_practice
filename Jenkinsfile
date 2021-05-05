@@ -1,25 +1,23 @@
 pipeline {
   agent any
   stages {
-    stage('Buzz Buzz') {
+    stage('shell1 ') {
       steps {
-        echo 'Hello World'
+        sh 'echo \'stage1 worked!!\''
       }
     }
 
-    stage('Bees Bees') {
+    stage('Shell2') {
       steps {
-        echo 'shammi timmi'
-        echo 'Buzzing bees'
-        echo 'Bees Buzzing Again'
+        sh 'echo \'Stage2 Worked!!\''
       }
     }
 
     stage('bum bum') {
       steps {
-        echo 'shammi timmi'
-        echo 'Buzzing bees'
-        echo 'Bees Buzzing Again'
+        sh '''echo \'Stage2 Worked!!\'
+'''
+        sh 'echo \'Stage3 step 2 worked!!\''
       }
     }
 

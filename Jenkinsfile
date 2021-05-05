@@ -13,13 +13,5 @@ pipeline {
       }
     }
 
-    stage('bum bum') {
-      steps {
-        sh '''echo \'Stage2 Worked!!\'
-'''
-        sh 'echo \'Stage3 step 2 worked!!\''
-      }
-    }
-
   }
 }
